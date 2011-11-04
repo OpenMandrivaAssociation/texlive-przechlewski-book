@@ -82,6 +82,7 @@ LaTeX".
 %doc %{_texmfdistdir}/doc/latex/przechlewski-book/wkmgr1.tex
 %doc %{_texmfdistdir}/doc/latex/przechlewski-book/wkmgr2.pdf
 %doc %{_texmfdistdir}/doc/latex/przechlewski-book/wkmgr2.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -92,3 +93,5 @@ LaTeX".
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
