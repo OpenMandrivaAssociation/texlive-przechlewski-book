@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-przechlewski-book
 Version:	20110814
-Release:	9
+Release:	10
 Summary:	Examples from Przechlewski's LaTeX book
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/przechlewski-book-examples
