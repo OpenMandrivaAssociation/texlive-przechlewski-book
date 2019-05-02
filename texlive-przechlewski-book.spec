@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-przechlewski-book
-Version:	20180303
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	Examples from Przechlewski's LaTeX book
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/przechlewski-book-examples
