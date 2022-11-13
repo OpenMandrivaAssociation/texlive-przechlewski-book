@@ -1,18 +1,12 @@
-# revision 23552
-# category Package
-# catalog-ctan /info/examples/przechlewski-book-examples
-# catalog-date 2011-08-14 21:16:59 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-przechlewski-book
-Version:	20190228
+Version:	23552
 Release:	1
 Summary:	Examples from Przechlewski's LaTeX book
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/przechlewski-book-examples
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/przechlewski-book.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/przechlewski-book.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/przechlewski-book.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/przechlewski-book.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ from the book "Praca magisterska i dyplomowa z programem
 LaTeX".
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -76,24 +70,10 @@ LaTeX".
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110814-2
-+ Revision: 755140
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110814-1
-+ Revision: 719313
-- texlive-przechlewski-book
-- texlive-przechlewski-book
-- texlive-przechlewski-book
-- texlive-przechlewski-book
-
