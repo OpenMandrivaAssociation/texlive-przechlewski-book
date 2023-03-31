@@ -1,6 +1,6 @@
 Name:		texlive-przechlewski-book
 Version:	23552
-Release:	1
+Release:	2
 Summary:	Examples from Przechlewski's LaTeX book
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/przechlewski-book-examples
