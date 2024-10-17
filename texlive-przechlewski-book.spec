@@ -3,7 +3,7 @@ Version:	23552
 Release:	2
 Summary:	Examples from Przechlewski's LaTeX book
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/examples/przechlewski-book-examples
+URL:		https://www.ctan.org/tex-archive/info/examples/przechlewski-book-examples
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/przechlewski-book.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/przechlewski-book.doc.r%{version}.tar.xz
